@@ -77,7 +77,7 @@ function ConversationList() {
                                             />
                                         ))}
                                 </div>
-                            </Scrollbars>
+                            </div>
                         </div>
                     </div>
 

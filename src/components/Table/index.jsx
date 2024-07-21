@@ -22,7 +22,7 @@ export default function Table({ table, notFoundMessage = 'Không có dữ liệu
                 ))}
             </div>
             <div className='tbody'>
-                <Scrollbars autoHide autoHideTimeout={4000} autoHideDuration={200} autoHeight autoHeightMax={350}>
+                <div>
                     {table.getRowModel().rows.length === 0 ? (
                         <div className='flex flex-col items-center justify-center py-6'>
                             <div className='text-orange-600'>
@@ -66,7 +66,7 @@ export default function Table({ table, notFoundMessage = 'Không có dữ liệu
                             </div>
                         ))
                     )}
-                </Scrollbars>
+                </div>
             </div>
         </div>
     );

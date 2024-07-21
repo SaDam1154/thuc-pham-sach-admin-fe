@@ -233,13 +233,13 @@ function Sidebar() {
             </header>
 
             <div className=''>
-                <Scrollbars autoHide autoHideTimeout={4000} autoHeight autoHideDuration={200} autoHeightMin={`calc(100vh - 80px)`}>
+                <div>
                     <ul className='flex h-full flex-col space-y-0.5 p-2' style={{ overflowY: 'overlay' }}>
                         {groupMenus.map((groupMenu, index) => (
                             <GroupMenu key={index} groupMenu={groupMenu} />
                         ))}
                     </ul>
-                </Scrollbars>
+                </div>
             </div>
         </div>
     );

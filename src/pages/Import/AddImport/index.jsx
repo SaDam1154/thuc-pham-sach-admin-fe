@@ -284,7 +284,7 @@ function AddImport() {
 
                         {/* LIST PRODUCT */}
                         <div className='flex-1'>
-                            <Scrollbars autoHide autoHideTimeout={4000} autoHideDuration={200}>
+                            <div>
                                 <div className='grid grid-cols-3 gap-2'>
                                     {renderProduct.map((product) => (
                                         <ProductCard
@@ -302,7 +302,7 @@ function AddImport() {
                                         />
                                     ))}
                                 </div>
-                            </Scrollbars>
+                            </div>
                         </div>
                     </div>
 
