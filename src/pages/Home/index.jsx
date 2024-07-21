@@ -50,7 +50,7 @@ function Home() {
                 <p className='text-lg '>
                     <span>
                         <span>3. Gọi HOTLINE hỗ trợ khách hàng: </span>
-                        <span className='underline'>0365011369</span>
+                        <span className='underline'>0773190263</span>
                     </span>
                 </p>
             </div>
