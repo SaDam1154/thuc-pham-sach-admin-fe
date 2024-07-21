@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply flex items-center justify-center rounded text-white;
+    }
+    .btn + .btn {
+        @apply ml-2;
+    }
+    .btn.btn-sm {
+        @apply px-4 py-1.5;
+    }
+    .btn.btn-md {
+        @apply min-w-[150px] px-5 py-2;
+    }
+
+    .btn.btn-red {
+        @apply bg-red-500 hover:bg-red-400;
+    }
+    .btn.btn-blue {
+        @apply bg-blue-500 hover:bg-blue-400;
+    }
+    .btn.btn-green {
+        @apply bg-green-600 hover:bg-green-500;
+    }
+    .btn.btn-yellow {
+        @apply bg-yellow-600 hover:bg-yellow-500;
+    }
+    .btn:disabled {
+        @apply pointer-events-none opacity-50;
+    }
+
+    .text-input {
+        @apply h-10 w-full rounded border-2 border-slate-300 px-2 outline-none hover:border-slate-500 focus:border-blue-500;
+    }
+
+    .text-input.invalid {
+        @apply !border-red-500;
+    }
+
+    .container {
+        @apply my-0 mx-auto max-w-[1300px] px-p-body;
+    }
+
+    .text-input:disabled {
+        @apply pointer-events-none !border-slate-300 !bg-slate-100 opacity-70;
+    }
+
+    .label {
+        @apply inline-block cursor-pointer pb-1 font-semibold text-gray-600;
+    }
+
+    input[type='checkbox'] {
+        height: 28px;
+        width: 28px;
+        border-radius: 4px;
+    }
+
+    .data-table {
+        @apply flex w-full flex-col overflow-hidden rounded-md border shadow-sm;
+    }
+
+    .data-table .tr {
+        @apply flex;
+    }
+
+    .data-table .thead .tr {
+        @apply border-b bg-gray-100 font-medium text-gray-900;
+    }
+
+    .data-table .tbody {
+        @apply flex-1;
+    }
+
+    .data-table .tbody .tr {
+        @apply cursor-pointer text-gray-700;
+    }
+
+    .data-table .tbody .tr:hover {
+        @apply bg-gray-50;
+    }
+
+    .data-table .th,
+    .data-table .td {
+        @apply flex flex-1 items-center px-4;
+    }
+
+    .data-table .th > *,
+    .data-table .td > * {
+        @apply flex-1;
+    }
+
+    .data-table .th {
+        @apply h-12;
+    }
+
+    .data-table .td {
+        @apply h-14;
+    }
+    .data-table .tr:not(:first-child) .td {
+        @apply border-t;
+    }
+}
