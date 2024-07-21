@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ConversationCard from '../../../components/ConversationCard';
 import { getConversationList } from '../../../configs/firebase/firebaseUtils';
-import { Scrollbars } from 'react-custom-scrollbars';
+
 import removeVietnameseTones from '../../../utils/removeVietnameseTones';
 import ChatBox from '../ChatBox';
 import { useDispatch, useSelector } from 'react-redux';
@@ -62,7 +62,7 @@ function ConversationList() {
 
                         {/* LIST PRODUCT */}
                         <div className='flex-1'>
-                            <Scrollbars autoHide autoHideTimeout={4000} autoHideDuration={200}>
+                            <div>
                                 <div className='grid grid-cols-1 gap-2'>
                                     {renderConversations
                                         ?.sort((a, b) => b.lastMessage.timestamp.seconds - a.lastMessage.timestamp.seconds)

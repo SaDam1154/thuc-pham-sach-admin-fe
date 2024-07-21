@@ -1,5 +1,5 @@
 import GroupMenu from './GroupMenu';
-import { Scrollbars } from 'react-custom-scrollbars';
+
 import { toast } from 'react-toastify';
 
 const groupMenus = [

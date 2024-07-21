@@ -12,7 +12,7 @@ import { useMemo } from 'react';
 import PriceInput from '../../../components/PriceInput';
 import { toast, ToastContainer } from 'react-toastify';
 import ProductCard from '../../../components/ProductCard';
-import { Scrollbars } from 'react-custom-scrollbars';
+
 import removeVietnameseTones from '../../../utils/removeVietnameseTones';
 import useModal from '../../../hooks/useModal';
 import { getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
